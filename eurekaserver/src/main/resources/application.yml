@@ -1,0 +1,14 @@
+server:
+  port: 8761
+eureka:
+  server:
+    enable-self-preservation: false #是否开启自我保护
+  instance:
+    preferIpAddress: true #是否以 IP 注册到注册中心，Eureka 默认是以 hostname 来注册的
+    hostname: ${spring.cloud.client.ipAddress}
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #注册中心默认地址
