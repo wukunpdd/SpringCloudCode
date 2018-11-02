@@ -13,6 +13,7 @@
         <module>eurekaclient</module>
         <module>gateway</module>
         <module>eurekafeign</module>
+        <module>eurekaconfig</module>
     </modules>
 
     <parent>
