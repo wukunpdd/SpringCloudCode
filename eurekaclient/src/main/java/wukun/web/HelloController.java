@@ -7,11 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Value("${server.port}")
-    private int port;
-
     @RequestMapping("index")
     public String index(){
-        return "Hello World!端口："+port;
+        return "Hello World!";
     }
 }
