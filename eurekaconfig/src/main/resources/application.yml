@@ -10,14 +10,14 @@ spring:
       server:
         git:
           uri: https://github.com/wukunpdd/SpringCloudCode.git #配置git仓库地址
-          searchPaths: 第09课/config #配置仓库路径
+          searchPaths: eurekaconfig/config #配置仓库路径
           username: wukunpdd #访问git仓库的用户名
           password: lovefen19940124 #访问git仓库的用户密码
       label: master #配置仓库的分支
 eureka:
   instance:
     hostname: ${spring.cloud.client.ipAddress}
-    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port} #默认是以 ip:application_name:端口
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
