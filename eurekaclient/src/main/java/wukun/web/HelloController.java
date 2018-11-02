@@ -5,13 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/hello")
 public class HelloController {
 
     @Value("${server.port}")
     private int port;
 
-    @RequestMapping("/index")
+    @RequestMapping("index")
     public String index(){
         return "Hello World!端口："+port;
     }

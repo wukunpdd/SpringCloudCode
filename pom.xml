@@ -12,6 +12,7 @@
         <module>eurekaserver</module>
         <module>eurekaclient</module>
         <module>gateway</module>
+        <module>eurekafeign</module>
     </modules>
 
     <parent>

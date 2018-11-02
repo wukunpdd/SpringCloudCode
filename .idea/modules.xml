@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringCloudCode.iml" filepath="$PROJECT_DIR$/SpringCloudCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaclient/eurekaclient.iml" filepath="$PROJECT_DIR$/eurekaclient/eurekaclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eurekafeign/eurekafeign.iml" filepath="$PROJECT_DIR$/eurekafeign/eurekafeign.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
     </modules>
