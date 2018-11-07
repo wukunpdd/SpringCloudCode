@@ -11,6 +11,11 @@ spring:
       discovery:
         enabled: true
         serviceId: config #连接的配置中心名字（applicaiton.name）
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     serviceUrl:
